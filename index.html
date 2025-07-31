@@ -1,47 +1,122 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Szanitéc Ellátások</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/a2e0e6a5ae.js" crossorigin="anonymous"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Szanitéc Ellátások</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>Szanitéc Ellátások</header>
-  <main>
+<header>Szanitéc Ellátások</header>
+<main>
 
-    <section class="collapsible">
-      <h2><i class="fas fa-band-aid"></i> Karcolás</h2>
-      <div class="content">
-        <div class="step">
-          <div class="action">/me előveszi a fertőtlenítő folyadékot, majd alaposan áttörli vele a karcolás környékét...</div>
-          <div class="result">/do A karcolás felületes, a vérzés csekély, a seb tiszta...</div>
-        </div>
-        <div class="step">
-          <div class="action">/me steril gézlapot tesz a karcolásra, majd rögzíti...</div>
-          <div class="result">/do A seb tiszta, a páciens fájdalma enyhe...</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="collapsible">
-      <h2><i class="fas fa-syringe"></i> Adrenalin injekció</h2>
-      <div class="content">
-        <div class="step">
-          <div class="action">/me elővesz egy adrenalin injekciót, leveszi a kupakot, belenyomja a combjába</div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <script>
-    document.querySelectorAll(".collapsible h2").forEach((title) => {
-      title.addEventListener("click", () => {
-        title.parentElement.classList.toggle("open");
-      });
-    });
-  </script>
+<section>
+  <h2>Karcolás</h2>
+  <div class="step">
+    <div class="action">/me előveszi a fertőtlenítő folyadékot, majd alaposan áttörli vele a karcolás környékét, hogy eltávolítsa a szennyeződéseket.</div>
+    <div class="action">/me óvatosan nyomókötést helyez a seb fölé, hogy elállítsa az enyhe vérzést.</div>
+    <div class="action">/do A karcolás felületes, a vérzés csekély, a seb tiszta, nincs látható fertőzés.</div>
+  </div>
+   <br></br>
+  <div class="step">
+    <div class="action">/me steril gézlapot tesz a karcolásra, majd rögzíti azt, hogy megakadályozza a piszkolódást.</div>
+    <div class="action">/do A seb tiszta, a páciens fájdalma enyhe, további ellátást nem igényel.</div>
+  </div>
+</section>
+<section>
+  <h2>Adrenalin injekció</h2>
+  <div class="step">
+    <div class="action">/me elővesz egy adrenalin injekciót, leveszi a kupakot, belenyomja a combjába.</div>
+	  </div>
+</section>
+ <br></br>
+<section>
+  <h2>Horzsolás</h2>
+  <div class="step">
+    <div class="action">/me leöblíti a horzsolás helyét steril sóoldattal, hogy eltávolítsa a szennyeződéseket és apró törmelékeket.</div>
+    <div class="action">/me fertőtlenítőt csepegtet a sebbe, majd steril gézlappal lefedi.</div>
+    <div class="action">/do A horzsolás felületes, a bőr kipirult és érzékeny, de nem mély.</div>
+  </div>
+  <br></br>
+  <div class="step">
+    <div class="action">/me gyengéden letörli a horzsolást, majd tapadós sebtapaszt helyez a seb fölé.</div>
+    <div class="action">/do A seb tiszta és nyugodt, a páciens mozgása nem korlátozott.</div>
+  </div>
+</section>
+ <br></br>
+<section>
+  <h2>Törés</h2>
+  <div class="step">
+    <div class="action">/me óvatosan megvizsgálja a sérült végtagot, tapintással ellenőrzi a deformitást és a fájdalom helyét.</div>
+    <div class="action">/me sínezi a törött testrészt egy előkészített sínnel, majd rögzíti azt szorosan, de nem túl szorosra.</div>
+    <div class="action">/do A végtag mozdulatlan, a törés stabilizálva, a fájdalom csillapítására gyógyszert adott.</div>
+  </div>
+   <br></br>
+  <div class="step">
+    <div class="action">/me fájdalomcsillapítót ad a sérültnek, majd gondosan a hordágyra fekteti, előkészítve a további szállításhoz.</div>
+    <div class="action">/do A törött végtag helyzete rögzített, a páciens stabil állapotban van.</div>
+  </div>
+</section>
+ <br></br>
+<section>
+  <h2>Zúzódás</h2>
+  <div class="step">
+    <div class="action">/me megvizsgálja a zúzódás helyét, amely duzzadt és kékes-lilás elszíneződésű.</div>
+    <div class="action">/me hideg borogatást helyez a sérült területre, hogy csökkentse a duzzanatot és a fájdalmat.</div>
+    <div class="action">/do A zúzódás nem mély, a bőr alatti vérzés látható.</div>
+  </div>
+   <br></br>
+  <div class="step">
+    <div class="action">/me ismételten ellenőrzi a sérültet, hogy nem romlik-e az állapota, majd tanácsot ad a további pihentetésre.</div>
+    <div class="action">/do A páciens fájdalma csökkent, a zúzódás enyhén duzzadt, további megfigyelést igényel.</div>
+  </div>
+</section>
+ <br></br>
+<section>
+  <h2>Vérzés csillapítás</h2>
+  <div class="step">
+    <div class="action">/me azonnal steril gézzel nyomókötést helyez a vérző seb fölé, és erősen nyomja, hogy elállítsa a vérzést.</div>
+    <div class="action">/me megemeli a sérült végtagot, hogy csökkentse a vérkeringést a területen.</div>
+    <div class="action">/do A vérzés lassan csillapodik, a seb tiszta, a véralvadás megindult.</div>
+  </div>
+   <br></br>
+  <div class="step">
+    <div class="action">/me folyamatosan ellenőrzi a kötést, ha szükséges, újra megnyomja a sebet.</div>
+    <div class="action">/me ha a vérzés erős, készül a további ellátásra és gyors szállításra.</div>
+    <div class="action">/do A vérzés kontroll alatt áll, a páciens stabil, további kezelés szükséges.</div>
+  </div>
+</section>
+ <br></br>
+<section>
+  <h2>Lőtt seb idegen test nélkül</h2>
+  <div class="step">
+    <div class="action">/me elővigyázatosan feltárja a lőtt seb környékét, fertőtleníti a sebet, majd steril kötszerrel takarja le.</div>
+    <div class="action">/me ellenőrzi a vérzést és a seb mélységét, hogy nincs-e idegen test a sebben.</div>
+    <div class="action">/do A seb nyitott, de nem tartalmaz idegen anyagot, a vérzés mérsékelt.</div>
+  </div>
+   <br></br>
+  <div class="step">
+    <div class="action">/me stabilizálja a sérültet, figyeli az életjeleket és előkészíti a gyors szállítást kórházba.</div>
+    <div class="action">/me vérzéscsillapítást végez, ha szükséges, miközben folyamatosan nyugtatja a sérültet.</div>
+    <div class="action">/do A sérült állapota stabil, további ellátás orvosi központban szükséges.</div>
+  </div>
+</section>
+ <br></br>
+<section>
+  <h2>Lőtt seb stabilizálás kórházba szállításig idegen testtel</h2>
+  <div class="step">
+    <div class="action">/me óvatosan, de határozottan rögzíti az idegen testet a sebben, hogy ne mozduljon el szállítás közben.</div>
+    <div class="action">/me steril kötést helyez a seb köré, és stabilizálja a sérült végtagot a további sérülés elkerülésére.</div>
+    <div class="action">/do A seb környéke duzzadt, a vérzés kontroll alatt, a sérült állapota szállításra alkalmas.</div>
+  </div>
+   <br></br>
+  <div class="step">
+    <div class="action">/me folyamatosan ellenőrzi a sérült légzését és keringését, közben stabilizálja az állapotát.</div>
+    <div class="action">/me előkészíti a hordágyat és koordinálja a gyors szállítást kórházba.</div>
+    <div class="action">/do Az idegen test nem mozdult el, a sérült fájdalma kontroll alatt, a szállítás biztonságos.</div>
+  </div>
+</section>
+ <br></br>
+</main>
 </body>
 </html>
