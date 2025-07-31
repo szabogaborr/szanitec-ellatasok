@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  margin: 0; padding: 0;
+}
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  padding: 1.5rem 2rem;
+}
+h2 {
+  margin-top: 0;
+  color: #2980b9;
+  font-size: 1.5rem;
+}
+.step {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #3498db;
+}
+.action {
+  font-style: italic;
+  color: #555;
+  margin: 0.3rem 0 0.6rem 0;
+}
+.result {
+  background: #ecf0f1;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 0;
+  }
+}
